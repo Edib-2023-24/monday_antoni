@@ -9,11 +9,77 @@
 /* Tipografía */
 @font-face {
   font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  src: url("../font/roboto-regular.woff2") format("woff2"),
+    url("../font/roboto-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "";
+  src: url("../font/roboto-bold.woff2") format("woff2"),
+    url("../font/roboto-bold.woff") format("woff");
 }
 
 /* ******************************** */
 
 /* Colores */
-
 /* ******************************** */
+:root {
+  /* Mode 1 */
+  /* colors */
+  --negro: #000000;
+  --azul-cielo: #7890a8;
+  --azul-fuerte: #181848;
+  --azul-mar: #304878;
+  --azul-marino: #204693;
+  --naranja: #f0a818;
+}
+
+/* Genericos */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+
+  height: 100vh;
+  display: flex;
+  background-color: blue;
+  flex-direction: column;
+}
+
+.botones {
+
+  display: flex;
+  justify-content: space-between;
+  background-color: rebeccapurple;
+  padding: 20px 40px;
+  list-style: none;
+
+}
+
+.botones a {
+
+  text-decoration: none;
+  background-color: red;
+  padding: 10px 20px;
+  color: white;
+
+}
+
+.texto {
+
+  display: flex;
+  background-color: red;
+  justify-content: center;
+  padding: 40px;
+
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0a818;
+  padding: 20px;
+}
